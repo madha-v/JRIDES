@@ -1,0 +1,42 @@
+.vcard {
+  background: white; border-radius: var(--radius-lg);
+  box-shadow: var(--shadow); overflow: hidden;
+  transition: transform 0.22s, box-shadow 0.22s;
+  display: flex; flex-direction: column;
+}
+.vcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.vcard-img-wrap { position: relative; height: 200px; overflow: hidden; background: var(--light); }
+.vcard-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.vcard:hover .vcard-img { transform: scale(1.04); }
+
+.vcard-type {
+  position: absolute; top: 12px; left: 12px;
+  background: rgba(15,23,42,0.85); color: white;
+  padding: 4px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+.vcard-verified {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(34,197,94,0.9); color: white;
+  padding: 4px 10px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
+  display: flex; align-items: center; gap: 4px;
+}
+
+.vcard-body { padding: 18px; flex: 1; display: flex; flex-direction: column; }
+.vcard-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+.vcard-title { font-size: 1rem; font-weight: 700; color: var(--dark); line-height: 1.3; }
+.vcard-price { text-align: right; white-space: nowrap; }
+.price-amt { font-size: 1.2rem; font-weight: 800; color: var(--primary); font-family: var(--font-display); }
+.price-label { font-size: 0.78rem; color: var(--mid); }
+.vcard-name { font-size: 0.82rem; color: var(--mid); margin-bottom: 10px; }
+
+.vcard-meta {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  font-size: 0.8rem; color: var(--mid);
+}
+.vcard-meta span { display: flex; align-items: center; gap: 4px; }
+.vcard-rating {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 0.82rem; color: var(--warning); font-weight: 600; margin-top: 8px;
+}

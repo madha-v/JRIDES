@@ -1,0 +1,8 @@
+.admin-search { position: relative; margin-bottom: 20px; }
+.admin-search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--mid); }
+.admin-filters { display: flex; gap: 12px; margin-bottom: 20px; align-items: center; }
+.admin-filters .admin-search { margin-bottom: 0; flex: 1; }
+.user-avatar-sm {
+  width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: white;
+  font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}

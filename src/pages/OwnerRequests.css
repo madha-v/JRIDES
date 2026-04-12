@@ -1,0 +1,13 @@
+.filter-tabs { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.filter-tab {
+  padding: 8px 16px; border-radius: 999px; border: 1.5px solid #e2e8f0;
+  background: white; color: var(--mid); font-size: 0.88rem; font-weight: 500;
+  cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px;
+}
+.filter-tab.active { border-color: var(--primary); background: rgba(249,115,22,0.08); color: var(--primary); }
+.filter-tab:hover:not(.active) { border-color: var(--mid); color: var(--dark); }
+.tab-count { background: var(--warning); color: white; border-radius: 999px; padding: 1px 7px; font-size: 0.72rem; font-weight: 700; }
+
+.renter-info { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 0.85rem; color: var(--mid); padding: 10px; background: var(--lighter); border-radius: var(--radius); }
+.renter-info strong { color: var(--dark); }
+.renter-message { font-style: italic; color: var(--mid); font-size: 0.87rem; border-left: 3px solid var(--primary-light); padding-left: 12px; }
